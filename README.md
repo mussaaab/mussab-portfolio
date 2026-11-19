@@ -16,9 +16,10 @@ All copy, links, projects and experience live in **`data/portfolio.ts`**. Compon
 - **Store badges:** drawn in the official style. To use Apple's/Google's exact artwork, replace the markup in `components/ui/StoreBadge.tsx`.
 
 ## Environment
-Copy `.env.example` to `.env.local`.
-- `NEXT_PUBLIC_SITE_URL`: your domain (canonical URL, OG, JSON-LD, sitemap).
+Set these in `.env.local` (locally) or in your Vercel project settings.
+- `NEXT_PUBLIC_SITE_URL`: your domain (canonical URL, OG, JSON-LD, sitemap). Defaults to `http://localhost:3000`.
 - `RESEND_API_KEY` + `CONTACT_TO_EMAIL`: contact form delivery via Resend. Without them the form opens the visitor's mail client, pre-filled.
+- `CONTACT_FROM_EMAIL` (optional): sender address. Defaults to `Portfolio <onboarding@resend.dev>`.
 
 ## Structure
 ```
